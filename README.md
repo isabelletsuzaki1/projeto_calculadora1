@@ -1,8 +1,5 @@
 # Projeto Calculadora — FinançApp
 
-> Projeto acadêmico desenvolvido com foco em Qualidade de Software, Testes, Refatoração, Documentação e Versionamento.
-
----
 
 ## 1. Identificação do Projeto
 
@@ -15,7 +12,6 @@
 - **Professor:** Daniel Ohata
 - **Semestre:** 2026.2
 
----
 
 ## 2. Visão Geral
 
@@ -23,13 +19,11 @@ O projeto consiste no desenvolvimento de um módulo de cálculos matemáticos b�
 
 Além das operações, o projeto aplica testes automatizados, tratamento de erros, refatoração, documentação técnica, versionamento e práticas de manutenção de código.
 
----
 
 ## 3. Problema
 
 A FinançApp necessita de um módulo matemático reutilizável, que execute operações corretamente e permaneça fácil de compreender e manter. Por isso, a solução precisa validar operações inválidas, tratar divisão por zero, demonstrar seu comportamento por testes e registrar a evolução do código em branches.
 
----
 
 ## 4. Objetivo
 
@@ -46,7 +40,6 @@ Desenvolver uma calculadora em Java aplicando práticas de qualidade, testes, do
 - Documentar classes e métodos com JavaDoc e gerar HTML em `docs/`.
 - Utilizar Git, GitHub, branches e commits organizados.
 
----
 
 ## 5. Escopo Funcional
 
@@ -61,7 +54,6 @@ Desenvolver uma calculadora em Java aplicando práticas de qualidade, testes, do
 
 O método principal da classe `Calculadora` é **`calc(int a, int b, String op)`**. Os operadores aceitos são `+`, `-`, `*` e `/`. O retorno é do tipo `double` para permitir resultados como `7 / 2 = 3.5`.
 
----
 
 ## 6. Requisitos Não Funcionais
 
@@ -74,7 +66,6 @@ O método principal da classe `Calculadora` é **`calc(int a, int b, String op)`
 | RNF05 | Versionamento | Histórico Git e branches `main` e `Refatoracao` |
 | RNF06 | Confiabilidade | Erros tratados na interface sem encerrar inesperadamente a execução |
 
----
 
 ## 7. Tecnologias Utilizadas
 
@@ -90,7 +81,6 @@ O método principal da classe `Calculadora` é **`calc(int a, int b, String op)`
 
 **Observação:** os testes deste projeto não utilizam JUnit; são automatizados por uma classe Java executável. Caso o professor exija especificamente **JUnit**, será necessário adaptar a classe de testes.
 
----
 
 ## 8. Estrutura do Projeto
 
@@ -111,7 +101,6 @@ projeto_calculadora/
 └── .gitignore
 ```
 
----
 
 ## 9. Execução da Aplicação
 
@@ -124,7 +113,6 @@ java -cp out calculadora.Principal
 
 O programa apresenta opções de cálculo no console e trata entradas que não sejam números inteiros, divisão por zero e operadores inválidos.
 
----
 
 ## 10. Testes Automatizados
 
@@ -136,9 +124,6 @@ java -cp out calculadora.TesteCalculadora
 
 A classe `TesteCalculadora.java` realiza **9 verificações** de soma, subtração, multiplicação, divisão, divisão por zero, operadores inválidos e cenários adicionais. A saída apresenta entrada, valor esperado, valor obtido e status. Os testes foram executados com aprovação no ambiente de desenvolvimento.
 
-![Evidência dos testes executados](prints/testes.png)
-
----
 
 ## 11. Refatoração e Versionamento
 
@@ -149,7 +134,6 @@ O histórico Git preserva uma implementação inicial. Na branch **`Refatoracao`
 
 Os commits registram a implementação, os testes, a refatoração e a documentação.
 
----
 
 ## 12. Documentação JavaDoc
 
@@ -161,18 +145,13 @@ javadoc -encoding UTF-8 -charset UTF-8 -docencoding UTF-8 -d docs src/calculador
 
 Abra o arquivo **`docs/index.html`** no navegador.
 
-![Evidência da documentação JavaDoc](prints/javadoc.png)
-
----
 
 ## 13. Repositório GitHub
 
-**Link:** `https://github.com/SEU-USUARIO/projeto_calculadora`
+**Link:** `https://github.com/isabelletsuzaki1/projeto_calculadora1`
 
 > Substituir `SEU-USUARIO` pelo nome de usuário real após criar e publicar o repositório. O link acima é apenas um exemplo, não um endereço de projeto já publicado.
 
----
-
 ## 14. Autoria
 
-**Isabelle Naomi Tsuzaki** — RA 251511 — Análise e Desenvolvimento de Sistemas, FACENS.
+**Isabelle Naomi Tsuzaki** — RA 251511 
