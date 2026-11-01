@@ -1,79 +1,178 @@
-# FinançApp — Projeto Calculadora
+# Projeto Calculadora — FinançApp
 
-## Descrição
-Calculadora Java para operações matemáticas básicas usadas no aplicativo fictício FinançApp.
-O programa oferece uma interface no console, mensagens de erro, testes automatizados e documentação JavaDoc.
+> Projeto acadêmico desenvolvido com foco em Qualidade de Software, Testes, Refatoração, Documentação e Versionamento.
 
-## Objetivo da atividade
-Praticar construção, validação, testes unitários, tratamento de erros, refatoração,
-documentação técnica e versionamento com Git e GitHub.
+---
 
-## Tecnologias utilizadas
-- Java 17+ (compilado e testado com OpenJDK 21)
-- JavaDoc (incluído no JDK)
-- Git e GitHub
-- Testes escritos em Java puro, sem dependências externas
+## 1. Identificação do Projeto
 
-## Estrutura do projeto
+- **Projeto:** Projeto Calculadora (`projeto_calculadora`)
+- **Contexto:** FinançApp
+- **Aluna:** Isabelle Naomi Tsuzaki
+- **RA:** 251511
+- **Curso:** Análise e Desenvolvimento de Sistemas — FACENS
+- **Disciplina:** Qualidade de Software (confirmar nome oficial da disciplina)
+- **Professor(a):** A preencher
+- **Semestre:** 2026.2
+
+---
+
+## 2. Visão Geral
+
+O projeto consiste no desenvolvimento de um módulo de cálculos matemáticos básicos em Java para a startup fictícia **FinançApp**. O módulo poderá apoiar funcionalidades de orçamento mensal, divisão de despesas, projeções financeiras e outros cálculos auxiliares.
+
+Além das operações, o projeto aplica testes automatizados, tratamento de erros, refatoração, documentação técnica, versionamento e práticas de manutenção de código.
+
+---
+
+## 3. Problema
+
+A FinançApp necessita de um módulo matemático reutilizável, que execute operações corretamente e permaneça fácil de compreender e manter. Por isso, a solução precisa validar operações inválidas, tratar divisão por zero, demonstrar seu comportamento por testes e registrar a evolução do código em branches.
+
+---
+
+## 4. Objetivo
+
+### 4.1 Objetivo Geral
+
+Desenvolver uma calculadora em Java aplicando práticas de qualidade, testes, documentação, refatoração e versionamento.
+
+### 4.2 Objetivos Técnicos
+
+- Implementar soma, subtração, multiplicação e divisão.
+- Tratar entradas incorretas e impedir divisão por zero.
+- Executar testes automatizados, verificando valores esperados e obtidos.
+- Refatorar o código sem alterar seu comportamento funcional.
+- Documentar classes e métodos com JavaDoc e gerar HTML em `docs/`.
+- Utilizar Git, GitHub, branches e commits organizados.
+
+---
+
+## 5. Escopo Funcional
+
+| ID | Funcionalidade | Descrição | Status |
+| --- | --- | --- | --- |
+| RF01 | Soma | Soma dois números inteiros | ✅ Implementado |
+| RF02 | Subtração | Subtrai dois números inteiros | ✅ Implementado |
+| RF03 | Multiplicação | Multiplica dois números inteiros | ✅ Implementado |
+| RF04 | Divisão | Divide dois números inteiros, com resultado decimal quando necessário | ✅ Implementado |
+| RF05 | Validação de divisão | Impede divisão por zero | ✅ Implementado |
+| RF06 | Operação inválida | Identifica operadores não suportados | ✅ Implementado |
+
+O método principal da classe `Calculadora` é **`calc(int a, int b, String op)`**. Os operadores aceitos são `+`, `-`, `*` e `/`. O retorno é do tipo `double` para permitir resultados como `7 / 2 = 3.5`.
+
+---
+
+## 6. Requisitos Não Funcionais
+
+| ID | Categoria | Requisito |
+| --- | --- | --- |
+| RNF01 | Qualidade | Organização, legibilidade e indentação do código |
+| RNF02 | Testabilidade | Testes automatizados para operações e falhas previstas |
+| RNF03 | Manutenção | Refatoração sem alteração do comportamento funcional |
+| RNF04 | Documentação | JavaDoc de classes, métodos e parâmetros |
+| RNF05 | Versionamento | Histórico Git e branches `main` e `Refatoracao` |
+| RNF06 | Confiabilidade | Erros tratados na interface sem encerrar inesperadamente a execução |
+
+---
+
+## 7. Tecnologias Utilizadas
+
+| Tecnologia | Versão | Utilização |
+| --- | --- | --- |
+| Java | 17+ (testado com OpenJDK 21) | Implementação da calculadora |
+| JDK | 21, no ambiente de validação | Compilação e execução |
+| Testes em Java puro | Sem framework externo | Execução de testes automatizados com verificações de resultado |
+| Git | Conforme instalação local | Controle de versão e branches |
+| GitHub | Plataforma web | Publicação do repositório remoto |
+| JavaDoc | Incluído no JDK | Documentação HTML |
+| IDE | VS Code ou IntelliJ (opcional) | Edição do projeto |
+
+**Observação:** os testes deste projeto não utilizam JUnit; são automatizados por uma classe Java executável. Caso o professor exija especificamente **JUnit**, será necessário adaptar a classe de testes.
+
+---
+
+## 8. Estrutura do Projeto
+
 ```text
 projeto_calculadora/
-├── src/calculadora/
-│   ├── Calculadora.java
-│   ├── Principal.java
-│   └── TesteCalculadora.java
-├── docs/                   # documentação JavaDoc gerada
-├── prints/                 # evidências de testes e documentação
+├── src/
+│   └── calculadora/
+│       ├── Calculadora.java
+│       ├── Principal.java
+│       └── TesteCalculadora.java
+├── docs/
+│   └── index.html          # página inicial da documentação JavaDoc
+├── prints/
+│   ├── testes.png          # execução dos testes
+│   ├── javadoc.png         # documentação gerada
+│   └── testes.txt          # resultado em texto
 ├── README.md
 └── .gitignore
 ```
 
-## Operações
-O método `calc(int a, int b, String op)` aceita `+`, `-`, `*` e `/`.
-Retorna `double`, para preservar divisões não inteiras (ex.: `7 / 2 = 3.5`).
-- Divisão por zero: `ArithmeticException`, tratada na interface para continuar a execução.
-- Operador inválido ou nulo: `IllegalArgumentException`, também tratada na interface.
-- Entradas que não são inteiros: mensagem de erro, sem finalizar o programa.
+---
 
-## Como compilar e executar
-Na raiz do projeto, com JDK instalado:
+## 9. Execução da Aplicação
+
+É necessário ter um JDK instalado. Na pasta raiz do projeto, execute:
 
 ```bash
 javac -encoding UTF-8 -d out src/calculadora/*.java
 java -cp out calculadora.Principal
 ```
 
-## Executar os testes
+O programa apresenta opções de cálculo no console e trata entradas que não sejam números inteiros, divisão por zero e operadores inválidos.
+
+---
+
+## 10. Testes Automatizados
+
+Para executar os testes após compilar:
+
 ```bash
 java -cp out calculadora.TesteCalculadora
 ```
 
-Os testes verificam soma, subtração, multiplicação, divisão, divisão por zero,
-operação inválida e casos adicionais. Exibem entrada, esperado, obtido e status.
-Se algum teste falhar, o processo termina com erro (`AssertionError`).
+A classe `TesteCalculadora.java` realiza **9 verificações** de soma, subtração, multiplicação, divisão, divisão por zero, operadores inválidos e cenários adicionais. A saída apresenta entrada, valor esperado, valor obtido e status. Os testes foram executados com aprovação no ambiente de desenvolvimento.
 
-![Print dos testes executados](prints/testes.png)
+![Evidência dos testes executados](prints/testes.png)
 
-## JavaDoc
-Para gerar novamente a documentação:
+---
+
+## 11. Refatoração e Versionamento
+
+O histórico Git preserva uma implementação inicial. Na branch **`Refatoracao`**, foram aplicadas melhorias de organização: extração de métodos auxiliares, nomes claros e simplificação do fluxo condicional. Os testes foram executados novamente após as mudanças.
+
+- **`main`:** versão final, com refatoração integrada e documentação.
+- **`Refatoracao`:** versão que demonstra a reorganização do código.
+
+Os commits registram a implementação, os testes, a refatoração e a documentação.
+
+---
+
+## 12. Documentação JavaDoc
+
+Para regenerar a documentação HTML:
 
 ```bash
 javadoc -encoding UTF-8 -charset UTF-8 -docencoding UTF-8 -d docs src/calculadora/*.java
 ```
 
-Abra `docs/index.html` no navegador.
+Abra o arquivo **`docs/index.html`** no navegador.
 
-![Print do JavaDoc](prints/javadoc.png)
+![Evidência da documentação JavaDoc](prints/javadoc.png)
 
-## Refatoração e controle de versão
-1. A versão inicial está no histórico do Git.
-2. A branch `Refatoracao` utiliza métodos auxiliares e `switch` para organizar o código.
-3. Os mesmos testes foram executados antes e depois da refatoração, com aprovação.
-4. A versão refatorada também está integrada à branch `main`.
+---
 
-## Link do repositório
-**Preencher após a publicação:** `https://github.com/SEU-USUARIO/projeto_calculadora`
+## 13. Repositório GitHub
 
-## Autoria
+**Link:** `https://github.com/SEU-USUARIO/projeto_calculadora`
 
-> Observação: adaptar a organização deste README ao arquivo “Exemplo README.MD”
-> disponibilizado na aula, pois esse modelo específico não foi fornecido aqui.
+> Substituir `SEU-USUARIO` pelo nome de usuário real após criar e publicar o repositório. O link acima é apenas um exemplo, não um endereço de projeto já publicado.
+
+---
+
+## 14. Autoria
+
+**Isabelle Naomi Tsuzaki** — RA 251511 — Análise e Desenvolvimento de Sistemas, FACENS.
