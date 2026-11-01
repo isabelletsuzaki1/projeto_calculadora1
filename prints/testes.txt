@@ -1,0 +1,11 @@
+[OK] Soma | entrada=(5, 3, +) | esperado=8.0 | obtido=8.0
+[OK] Subtração | entrada=(5, 3, -) | esperado=2.0 | obtido=2.0
+[OK] Multiplicação | entrada=(5, 3, *) | esperado=15.0 | obtido=15.0
+[OK] Divisão | entrada=(7, 2, /) | esperado=3.5 | obtido=3.5
+[OK] Divisão por zero | entrada=(8, 0, /) | esperado=ArithmeticException | obtido=ArithmeticException
+[OK] Operação inválida | entrada=(5, 3, %) | esperado=IllegalArgumentException | obtido=IllegalArgumentException
+[OK] Operação nula | entrada=(5, 3, null) | esperado=IllegalArgumentException | obtido=IllegalArgumentException
+[OK] Números negativos | entrada=(-5, 2, +) | esperado=-3.0 | obtido=-3.0
+[OK] Valores grandes | entrada=(2147483647, 1, +) | esperado=2.147483648E9 | obtido=2.147483648E9
+
+Resumo: 9 aprovado(s), 0 reprovado(s).
