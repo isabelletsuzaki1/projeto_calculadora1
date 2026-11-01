@@ -11,8 +11,8 @@
 - **Aluna:** Isabelle Naomi Tsuzaki
 - **RA:** 251511
 - **Curso:** Análise e Desenvolvimento de Sistemas — FACENS
-- **Disciplina:** Qualidade de Software (confirmar nome oficial da disciplina)
-- **Professor(a):** A preencher
+- **Disciplina:** UX/UI e Testes de Software
+- **Professor:** Daniel Ohata
 - **Semestre:** 2026.2
 
 ---
