@@ -4,7 +4,7 @@ package calculadora;
  * Executa operações aritméticas utilizadas nas funcionalidades do FinançApp.
  * A validação separa o tratamento de erros da lógica matemática.
  *
- * @author Aluno(a)
+ * @author Isabelle Naomi Tsuzaki
  * @version 2.0
  */
 public class Calculadora {

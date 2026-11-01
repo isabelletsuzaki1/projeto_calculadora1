@@ -4,7 +4,7 @@ package calculadora;
  * Suíte de testes unitários sem bibliotecas externas.
  * Cada caso informa entrada, resultado esperado e resultado obtido.
  *
- * @author Aluno(a)
+ * @author Isabelle Naomi Tsuzaki
  * @version 1.0
  */
 public class TesteCalculadora {

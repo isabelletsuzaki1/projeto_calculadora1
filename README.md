@@ -74,7 +74,6 @@ Abra `docs/index.html` no navegador.
 **Preencher após a publicação:** `https://github.com/SEU-USUARIO/projeto_calculadora`
 
 ## Autoria
-Substituir `Aluno(a)` nos arquivos Java pelo nome do estudante antes da entrega.
 
 > Observação: adaptar a organização deste README ao arquivo “Exemplo README.MD”
 > disponibilizado na aula, pois esse modelo específico não foi fornecido aqui.

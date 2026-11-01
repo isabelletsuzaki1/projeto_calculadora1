@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Interface de console para utilizar a calculadora sem encerrar em erros de entrada.
  *
- * @author Aluno(a)
+ * @author Isabelle Naomi Tsuzaki
  * @version 1.0
  */
 public class Principal {
